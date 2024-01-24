@@ -1,16 +1,19 @@
 <template>
   <Nav/>
 
-  <main class="form-signin">
+  <main>
+    <!-- I had remove class form-signin, because the container i put was in this class and it have width too small -->
     <router-view/>
   </main>
+  <Footer/>
 </template>
 
 <script>
 import Nav from "@/components/Nav.vue";
+import Footer from "@/components/FooterVue.vue";
 
 export default {
-  components: {Nav}
+  components: {Nav, Footer},
 }
 </script>
 
@@ -20,6 +23,7 @@ export default {
   max-width: 330px;
   padding: 15px;
   margin: auto;
+  /* background-color: red; */
 }
 
 .form-signin .checkbox {

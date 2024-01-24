@@ -17,10 +17,10 @@
     <div class="header-menu">
       <ul class="container-fluid">
         <router-link to="/" class="navbar-brand"><li>Home</li></router-link>
-        <router-link to="/year_one"><li>Year Two</li></router-link>
-        <li>Year Three</li>
-        <li>Year Four</li>
-        <li>Year Five</li>
+        <router-link to="/year_two"><li>Year Two</li></router-link>
+        <router-link to="/year_three"><li>Year Three</li></router-link>
+        <router-link to="/year_four"><li>Year Four</li></router-link>
+        <router-link to="/year_five"><li>Year Five</li></router-link>
         <li><input type="text" placeholder="Search.." /></li>
         <li class="nav-item" v-if="!auth">
           <router-link to="/login" class="nav-link">Login</router-link>

@@ -1,5 +1,5 @@
 <template>
-    <div class="year-one-container">
+    <div class="year-two-container">
 
     </div>
 </template>
@@ -9,7 +9,7 @@
         width: 100%;
         height: 100vh;
     }
-    .year-one-container{
+    .year-two-container{
         width: 85%;
         height: 100vh;
         background-color: aqua;

@@ -1,11 +1,11 @@
 <template>
-  <Nav/>
+  <Nav />
 
   <main>
     <!-- I had remove class form-signin, because the container i put was in this class and it have width too small -->
-    <router-view/>
+    <router-view />
   </main>
-  <Footer/>
+  <Footer />
 </template>
 
 <script>
@@ -13,8 +13,8 @@ import Nav from "@/components/Nav.vue";
 import Footer from "@/components/FooterVue.vue";
 
 export default {
-  components: {Nav, Footer},
-}
+  components: { Nav, Footer },
+};
 </script>
 
 <style>

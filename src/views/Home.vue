@@ -2,7 +2,12 @@
   <div class="container-home">
     <div class="available-container">
       <!-- @slideshow-container -->
-      <div class="slideshow-container"></div>
+      <div class="slideshow-container">
+        <div class="available-title">
+          <h1 class="h1">Available_course</h1>
+          <div class="border"></div>
+        </div>
+      </div>
       <!-- @recent-course -->
       <div class="recent-course-container"></div>
     </div>
@@ -31,16 +36,42 @@ body {
 /* @slideshow-container */
 .slideshow-container {
   width: 100%;
-  height: 600px;
+  height: 420px;
   background-color: white;
+  padding: 10px;
+  position: relative;
+}
+.slideshow-container .available-title{
+  position: absolute;
+  display: flex;
+  /* padding-top: 10px; */
+  font-size: 13px;
+  width: 100%;
+  font-weight: 700;
+}
+.slideshow-container .h1{
+  /* width: 100%; */
+  /* height: 30px; */
+  background-color: red;
+  font-size: 17px;
+  padding: 9px;
+  color: black;
+}
+.slideshow-container .border{
+  border-bottom: 19px solid black !important;
+  border-right: 19px solid transparent !important;
+  border-left: 19px solid blue !important;
+  border-top: 19px solid transparent !important;
+  height: 9px;
 }
 /* @recent-course-container */
 .recent-course-container {
   width: 100%;
-  height: 370px;
+  height: 240px;
   background-color: aqua;
   margin-top: 10px;
 }
+
 </style>
 
 <script>

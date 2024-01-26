@@ -1,13 +1,6 @@
 <template>
     <!-- {{ message }} -->
-    <div class="container">
-  <div class="row row-cols-3">
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    
-  </div>
-</div>
+    <H1>Home</H1>
 </template>
   
   <script>

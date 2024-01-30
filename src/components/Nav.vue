@@ -97,7 +97,7 @@
   body {
     width: 100%;
     height: 100vh;
-    background-color: gray;
+    /* background-color: gray; */
   }
   /* @header-depart-container */
   .header-depart-container {

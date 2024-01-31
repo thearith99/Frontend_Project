@@ -4,11 +4,17 @@
     <div class="header-department">
       <!-- @logo-container -->
       <div class="logo-container">
-        <h1>Logo</h1>
+        <div class="itc-logo">
+          <img src="../../src/assets/images/itc_logo.png" alt="">
+        </div>
+        <div class="gic-logo">
+          <img src="../../src/assets/images/logo.png" alt="">
+        </div>
       </div>
-      <!-- @title-container -->
-      <div class="title-container">
-        <h1>Department name</h1>
+       <!-- @title-container -->
+       <div class="title-container">
+        <h1>បណ្ណាល័យដេប៉ាតឺម៉ង់ព៏ត័មានវិទ្យា</h1>
+        <h3>Library of Department GIC</h3>
       </div>
     </div>
   </div>
@@ -94,6 +100,7 @@
   };
   </script>
   <style>
+   @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
   body {
     width: 100%;
     height: 100vh;
@@ -108,15 +115,39 @@
   .header-department {
     width: 85%;
     height: 100%;
-    background-color: orangered;
+    /* background-color: orangered; */
     margin: auto;
     display: flex;
+    gap: 10px;
   }
-  /* @logo-container */
   .logo-container {
-    width: 130px;
+    width: 170px;
     height: 100%;
-    background-color: black;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-container .itc-logo{
+    width: 90px;
+    height: 70%;
+    margin-right: 6px;
+    /* background-color: red; */
+  }
+  .logo-container .itc-logo img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+  .logo-container .gic-logo{
+    width: 90px;
+    height: 60%;
+    /* background-color: blue; */
+  }
+  .logo-container .gic-logo img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
   }
   .logo-container h1 {
     color: white;
@@ -128,29 +159,41 @@
   .title-container {
     width: 600px;
     height: 100%;
-    background-color: deeppink;
+    /* background-color: deeppink; */
+    margin: 0px 130px auto;
     margin: auto;
   }
   .title-container h1 {
-    color: white;
-    font-size: 30px;
+    color: #ffffff;
+    font-size: 43px;
+    font-family: 'Battambang', system-ui;
+    font-weight: 400;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 10px;
+  }
+  .title-container h3 {
+    color: white;
+    font-size: 27px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 8px;
   }
   
   /* @header-menu-container */
   .header-menu-container {
     width: 100%;
-    height: 75px;
+    height: 65px;
     background-color: blueviolet;
     position: sticky;
     top: 0px;
     z-index: 10;
+    padding-right: 0;
   }
   .header-menu {
     width: 85%;
     /* height: 100%; */
-    background-color: green;
+    /* background-color: green; */
     margin: auto;
     /* padding-top: 28px; */
     align-items: center;
@@ -158,11 +201,12 @@
   }
   .header-menu ul {
     list-style-type: none;
-    gap: 40px;
+    gap: 45px;
     display: flex;
     text-align: center;
     align-items: center;
     padding: 20.3px;
+    text-decoration: none;
   }
   .header-menu ul li {
     font-size: 16px;
@@ -197,5 +241,8 @@
     background-color: orange;
     color: white;
   }
+  /* .header-menu ul li a{
+    text-decoration:  none;
+  } */
   </style>
   

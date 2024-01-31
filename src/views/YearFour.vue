@@ -14,7 +14,7 @@
             <h5>{{ pdata.name }}</h5>
           </div>
           <div class="grid-button">
-            <button>Course</button>
+            <button @click="navigateToSubcourse(pdata.id)">Course</button>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ export default {
         axios
           .get("http://127.0.0.1:8000/api/getOneGrade/3")
           .then((response) => {
-            console.log(response.data.Course);
+            // console.log(response.data.Course);
             this.product = response.data.Course;
           })
           .catch((error) => {
@@ -49,6 +49,10 @@ export default {
             this.loading = false; // Set loading to false regardless of success or failure
           });
       },
+      navigateToSubcourse(id) {
+      // Use Vue Router to navigate to the subcourse route
+      this.$router.push({ name: 'subcourse', params: { id } });
+    },
     },
 };
 </script>
